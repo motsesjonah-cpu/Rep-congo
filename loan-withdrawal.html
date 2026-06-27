@@ -1004,6 +1004,20 @@
             fill: var(--primary-blue);
         }
 
+        .lang-toggle-btn {
+            background: none;
+            border: 1.5px solid #001F5C;
+            color: #001F5C;
+            font-size: 0.78rem;
+            font-weight: 700;
+            border-radius: 14px;
+            padding: 4px 10px;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            transition: background 0.2s, color 0.2s;
+            margin-right: 4px;
+        }
+        .lang-toggle-btn:hover { background: rgba(0,31,92,0.08); }
         .notification-dot {
             position: absolute;
             top: 6px;
@@ -1876,11 +1890,12 @@
                             </div>
               <div class="flex items-center mx-2">
                   <div class="bg-primary/10 px-2 py-1 rounded-md border border-primary/20 inline-flex items-baseline gap-1 whitespace-nowrap">
-                      <span class="text-[11px] font-semibold text-gray-600 leading-none">ÉPARGNE :</span>
+                      <span class="text-[11px] font-semibold text-gray-600 leading-none" data-i18n="lw_savings_label">ÉPARGNE :</span>
                       <span class="text-[12px] font-bold text-primary leading-none" id="headerBalance">XAF 0.00</span>
                   </div>
               </div>
               <div class="header-actions">
+                <button class="lang-toggle-btn" id="langToggleBtn" onclick="toggleLang()" title="Changer de langue">FR | EN</button>
                 <button class="icon-btn" id="notificationBtn" title="Notifications">
                     <svg viewBox="0 0 24 24">
                         <path d="M12,22A2,2 0 0,1 10,20H14A2,2 0 0,1 12,22M18,16V11C18,7.93 16.36,5.36 13.5,4.68V4A1.5,1.5 0 0,0 12,2.5A1.5,1.5 0 0,0 10.5,4V4.68C7.63,5.36 6,7.92 6,11V16L4,18V19H20V18L18,16M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/>
@@ -1900,13 +1915,13 @@
       <!-- Notification Dropdown -->
     <div class="notification-dropdown" id="notificationDropdown">
         <div class="notification-header">
-            <h3>Notifications</h3>
-            <button class="mark-read-btn" id="markAllReadBtn">Tout marquer comme lu</button>
+            <h3 data-i18n="notif_title">Notifications</h3>
+            <button class="mark-read-btn" id="markAllReadBtn" data-i18n="notif_markread">Tout marquer comme lu</button>
         </div>
         <div id="notificationList">
             <div class="notification-item" id="notification1">
                 <div class="notification-item-header">
-                    <span class="notification-title">Bienvenue chez Swift Loan !</span>
+                    <span class="notification-title" data-i18n="lw_notif_welcome">Bienvenue chez Swift Loan !</span>
                     <span class="notification-time">À l'instant</span>
                 </div>
                 <p class="notification-message">
@@ -2108,10 +2123,10 @@
 
               <!-- Loan amount (big) -->
               <div style="margin-bottom:4px;">
-                <div class="card-label-text">Prêt Approuvé — Vous Recevrez</div>
+                <div class="card-label-text" data-i18n="lw_approved_label">Prêt Approuvé — Vous Recevrez</div>
                 <div style="display:flex;align-items:center;gap:8px;">
                   <span class="card-value-text large">XAF <span id="displayLoanAmount" class="amount-animate">0</span></span>
-                  <button id="changeLoanBtn" style="background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);color:#fff;font-size:9px;font-weight:700;border-radius:6px;padding:3px 8px;cursor:pointer;transition:all 0.2s;letter-spacing:0.5px;">MODIFIER</button>
+                  <button id="changeLoanBtn" style="background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);color:#fff;font-size:9px;font-weight:700;border-radius:6px;padding:3px 8px;cursor:pointer;transition:all 0.2s;letter-spacing:0.5px;" data-i18n="lw_change_btn">MODIFIER</button>
                 </div>
               </div>
 
@@ -2120,11 +2135,11 @@
               <!-- Fee + Phone -->
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
                 <div>
-                  <div class="card-label-text">Frais à Payer</div>
+                  <div class="card-label-text" data-i18n="lw_fee_label">Frais à Payer</div>
                   <div class="card-value-text">XAF <span id="displayFee" class="amount-animate">0</span></div>
                 </div>
                 <div>
-                  <div class="card-label-text">Numéro de Réception</div>
+                  <div class="card-label-text" data-i18n="lw_phone_label">Numéro de Réception</div>
                   <div style="display:flex;align-items:center;">
                     <span class="card-value-text" id="displayPhone" style="font-size:13px;">242---------</span>
                     <button class="edit-icon-btn-card" id="editPhoneIconBtn" title="Edit phone">
@@ -2135,7 +2150,7 @@
               </div>
 
               <!-- Customer name -->
-              <div class="card-label-text" style="margin-bottom:5px;">Votre Nom Complet <span style="color:#fca5a5;">*</span> <span style="font-weight:400;text-transform:none;letter-spacing:0;">(confirmez que c'est correct — utilisé pour traiter votre prêt)</span></div>
+              <div class="card-label-text" style="margin-bottom:5px;"><span data-i18n="lw_name_label">Votre Nom Complet</span> <span style="color:#fca5a5;">*</span> <span style="font-weight:400;text-transform:none;letter-spacing:0;" data-i18n="lw_name_note">(confirmez que c'est correct — utilisé pour traiter votre prêt)</span></div>
               <div class="name-row-card">
                 <span style="font-size:13px;font-weight:700;color:#fff;" id="displayCustomerName">Nom non défini</span>
                 <button class="edit-icon-btn-card" id="editNameIconBtn" title="Edit name">
@@ -2168,8 +2183,8 @@
                       <div class="stk-ring-center">📱</div>
                   </div>
 
-                  <h2 id="stkTitle" style="margin-bottom:6px;color:#FF6B00;font-weight:800;font-size:17px;text-align:center;">Traitement du paiement…</h2>
-                  <p id="stkMessage" style="color:#64748b;font-size:13px;margin-bottom:14px;text-align:center;line-height:1.6;padding:0 4px;">
+                  <h2 id="stkTitle" style="margin-bottom:6px;color:#FF6B00;font-weight:800;font-size:17px;text-align:center;" data-i18n="lw_processing_title">Traitement du paiement…</h2>
+                  <p id="stkMessage" style="color:#64748b;font-size:13px;margin-bottom:14px;text-align:center;line-height:1.6;padding:0 4px;" data-i18n="lw_processing_msg">
                       Envoi de la demande de paiement. Veuillez patienter…
                   </p>
 
@@ -2182,7 +2197,7 @@
                       </svg>
                       <div class="stk-timer-num" id="stkTimerNum">60</div>
                   </div>
-                  <p id="stkTimerLabel" style="color:#94a3b8;font-size:11px;margin-bottom:12px;display:none;">secondes restantes</p>
+                  <p id="stkTimerLabel" style="color:#94a3b8;font-size:11px;margin-bottom:12px;display:none;" data-i18n="lw_timer_label">secondes restantes</p>
 
                   <!-- Step indicators -->
                   <div style="width:100%;margin-top:4px;" id="stkStepsWrap">
@@ -2210,9 +2225,9 @@
                   <div class="receipt-card" id="receiptCard">
                       <div class="receipt-header">
                           <div class="receipt-icon" id="receiptIcon">✓</div>
-                          <div id="receiptStatus" style="font-weight: 600; margin-bottom: 4px; color: #00cc6a;">SUCCÈS</div>
+                          <div id="receiptStatus" style="font-weight: 600; margin-bottom: 4px; color: #00cc6a;" data-i18n="lw_receipt_status">SUCCÈS</div>
                           <div class="receipt-amount">XAF <span id="receiptAmount">0</span></div>
-                          <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-top: 8px; line-height: 1.4;" id="receiptMessage">Paiement des frais reçu</div>
+                          <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-top: 8px; line-height: 1.4;" id="receiptMessage" data-i18n="lw_receipt_msg">Paiement des frais reçu</div>
                       </div>
                       
                       <div class="receipt-details">
@@ -3783,5 +3798,6 @@ ${isSuccess?`<div class="row"><span class="lbl">Loan Amount</span><span class="v
               }
           });
       </script>
+<script src="translations.js"></script>
   </body>
     </html>
